@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naveen Sampath | Certificates</title>
+    <style>
+        :root { --primary: #003366; --accent: #e67e22; --text: #333; --bg: #f9f9f9; }
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; color: var(--text); background: var(--bg); line-height: 1.6; }
+
+        nav { background: #002244; padding: 1rem; text-align: center; position: sticky; top: 0; z-index: 1000; }
+        nav a { color: white; text-decoration: none; font-size: 1.1rem; margin: 0 15px; font-weight: bold; padding: 8px 15px; border-radius: 5px; transition: 0.3s; }
+        nav a:hover, nav a.active { background: var(--accent); }
+
+        .container { max-width: 1100px; margin: 0 auto; padding: 3rem 2rem; background: white; min-height: 100vh; }
+        
+        /* --- HEADER --- */
+        .header-mini { 
+            background: linear-gradient(rgba(0, 34, 68, 0.8), rgba(0, 34, 68, 0.6)), 
+                        url('images/cover.jpg'); 
+            background-size: cover;      
+            background-position: center; 
+            background-repeat: no-repeat;
+            color: white; 
+            padding: 5rem 2rem;          
+            text-align: center; 
+            margin-bottom: 2rem; 
+            box-shadow: inset 0 -10px 10px -10px rgba(0,0,0,0.3); 
+        }
+
+        .header-mini h1 { margin: 0; font-size: 2.5rem; text-shadow: 2px 2px 5px rgba(0,0,0,0.5); }
+        .header-mini p { font-size: 1.1rem; opacity: 0.9; margin-top: 10px; }
+        
+        .subsection-header {
+            background: #f0f0f0; color: #333; padding: 12px 20px; font-weight: bold; 
+            border-radius: 5px; margin: 40px 0 20px 0; font-size: 1.2rem; border-left: 5px solid var(--accent);
+        }
+
+        /* GRID */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); 
+            gap: 20px;
+        }
+
+        .gallery-item {
+            border: 1px solid #eee; background: white; transition: transform 0.2s;
+            border-radius: 8px; overflow: hidden; display: flex; flex-direction: column;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .gallery-item:hover { transform: translateY(-5px); box-shadow: 0 8px 20px rgba(0,0,0,0.15); }
+        
+        .gallery-item img {
+            width: 100%; height: 160px; object-fit: cover; border-bottom: 1px solid #f4f4f4;
+        }
+        
+        .gallery-content { padding: 15px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between; }
+        .gallery-title { font-size: 1rem; font-weight: bold; color: var(--primary); line-height: 1.3; margin-bottom: 5px; }
+        .gallery-subtitle { font-size: 0.85rem; color: #666; margin-bottom: 15px; }
+
+        /* NEW BUTTON STYLE FOR LINKS */
+        .view-btn {
+            display: block;
+            text-align: center;
+            background-color: var(--primary);
+            color: white;
+            padding: 8px 0;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            margin-top: auto; /* Pushes button to bottom */
+            transition: background 0.3s;
+        }
+        .view-btn:hover { background-color: var(--accent); }
+
+        footer { background: #222; color: white; text-align: center; padding: 1rem; margin-top: 2rem; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="experience.html">Experience & Skills</a>
+        <a href="certificates.html" class="active">Certificates</a>
+    </nav>
+
+    <div class="header-mini">
+        <h1>Certificates & Qualifications</h1>
+        <p>A complete portfolio of awards, professional certifications, and technical training.</p>
+    </div>
+
+    <div class="container">
+
+        <div class="subsection-header">Awards & Research Recognition</div>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="images/award_duke_silver.jpeg" alt="Duke Silver" onerror="this.src='https://via.placeholder.com/300x160?text=Duke+Silver'">
+                <div class="gallery-content">
+                    <div>
+                        <div class="gallery-title">Duke of Edinburgh's Award</div>
+                        <div class="gallery-subtitle">Silver Standard</div>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1hZKth94MkremIDXGQOzyQNmnDalQa5Km/view?usp=sharing" target="_blank" class="view-btn">View Certificate</a>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/award_duke_bronze.jpeg" alt="Duke Bronze" onerror="this.src='https://via.placeholder.com/300x160?text=Duke+Bronze'">
+                <div class="gallery-content">
+                    <div>
+                        <div class="gallery-title">Duke of Edinburgh's Award</div>
+                        <div class="gallery-subtitle">Bronze Standard</div>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1ST3fsJp7uzT_Q-kq-8U7WoWIq0B7rTYG/view?usp=drive_link" target="_blank" class="view-btn">View Certificate</a>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/award_emerging.jpg" alt="Emerging Engineer" onerror="this.src='https://via.placeholder.com/300x160?text=Emerging+Engineer'">
+                <div class="gallery-content">
+                    <div>
+                        <div class="gallery-title">Emerging Civil Engineer Award 2025</div>
+                        <div class="gallery-subtitle">Semi-Finalist</div>
+                    </div>
+                    <span style="font-size:0.8rem; color:#999; text-align:center; display:block; padding:8px 0;">(Award Pending/Offline)</span>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/award_erus.png" alt="Research Symposium" onerror="this.src='https://via.placeholder.com/300x160?text=Research+Paper'">
+                <div class="gallery-content">
+                    <div>
+                        <div class="gallery-title">ERUS Symposium 2025</div>
+                        <div class="gallery-subtitle">Presented Research: Sustainable Procurement</div>
+                    </div>
+                    <a href="https://drive.google.com/file/d/13Pn4t82_u5u8FJiFdtDCXwRPBdPgiYOj/view?usp=drive_link" target="_blank" class="view-btn">View Paper</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="subsection-header">Project Management & Construction</div>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="images/cert_mtf_eng_mgmt.jpg" alt="Executive Diploma" onerror="this.src='https://via.placeholder.com/300x160?text=Exec+Diploma'">
+                <div class="gallery-content">
+                    <div>
+                        <div class="gallery-title">Executive Diploma in Engineering Management</div>
+                        <div class="gallery-subtitle">MTF Institute</div>
+                    </div>
+                    <a href="https://drive.google.com/file/d/12F6o_c06CKWykGCBwdDi41x8-Uj2bJc_/view?usp=drive_link" target="_blank" class="view-btn">View Certificate</a>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/cert_columbia_pm.jpg" alt="Columbia PM" onerror="this.src='https://via.placeholder.com/300x160?text=Columbia+Uni'">
+                <div class="gallery-content">
+                    <div>
+                        <div class="gallery-title">Construction Project Management</div>
+                        <div class="gallery-subtitle">Columbia University</div>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1DBE1m8OMOylpd4lLdTR3yqffishML_0T/view?usp=drive_link" target="_blank" class="view-btn">View Certificate</a>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/cert_google_foundation.jpg" alt="PM Foundation" onerror="this.src='https://via.placeholder.com/300x160?text=PM+Foundation'">
+                <div class="gallery-content">
+                    <div>
+                        <div class="gallery-title">Foundation of Project Management</div>
+                        <div class="gallery-subtitle">Authorized by Google</div>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1rPlTPZSaT3NUiGR9YLCCykwxejGS4IoH/view?usp=drive_link" target="_blank" class="view-btn">View Certificate</a>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/cert_google_init.jpg" alt="PM Initiation" onerror="this.src='https://via.placeholder.com/300x160?text=PM+Initiation'">
+                <div class="gallery-content">
+                    <div>
+                        <div class="gallery-title">Project Initiation</div>
+                        <div class="gallery-subtitle">Authorized by Google</div>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1MgxZtKjkB88SCfDdKvR5oPcXyNrTIspI/view?usp=drive_link" target="_blank" class="view-btn">View Certificate</a>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/cert_google_plan.jpg" alt="PM Planning" onerror="this.src='https://via.placeholder.com/300x160?text=PM+Planning'">
+                <div class="gallery-content">
+                    <div>
+                        <div class="gallery-title">Project Planning</div>
+                        <div class="gallery-subtitle">Authorized by Google</div>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1fOTx3kRmbhNxEPuHQdNucCJ9m8pn2Ffr/view?usp=drive_link" target="_blank" class="view-btn">View Certificate</a>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/cert_google_exec.jpg" alt="PM Execution" onerror="this.src='https://via.placeholder.com/300x160?text=PM+Execution'">
+                <div class="gallery-content">
+                    <div>
+                        <div class="gallery-title">Project Execution</div>
+                        <div class="gallery-subtitle">Authorized by Google</div>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1vWh8u6Xi-zITGKFSZjDdLhnWEvlvz-wE/view?usp=drive_link" target="_blank" class="view-btn">View Certificate</a>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/cert_google_agile.jpg" alt="Agile PM" onerror="this.src='https://via.placeholder.com/300x160?text=Agile+PM'">
+                <div class="gallery-content">
+                    <div>
+                        <div class="gallery-title">Agile Project Management</div>
+                        <div class="gallery-subtitle">Authorized by Google</div>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1-naFRmz0ps2rT6vfJP3oaUFpVeQb7eXy/view?usp=drive_link" target="_blank" class="view-btn">View Certificate</a>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/cert_google_capstone.jpg" alt="Capstone" onerror="this.src='https://via.placeholder.com/300x160?text=PM+Capstone'">
+                <div class="gallery-content">
+                    <div>
+                        <div class="gallery-title">Capstone: PM in Real World</div>
+                        <div class="gallery-subtitle">Authorized by Google</div>
+                    </div>
+                    <a href="https://drive.google.com/file/d/13o5rJIB2Gb69vNXa1_zQWl3Mi84Hj9xJ/view?usp=drive_link" target="_blank" class="view-btn">View Certificate</a>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/cert_uom_pm.jpg" alt="UoM PM" onerror="this.src='https://via.placeholder.com/300x160?text=UoM+PM'">
+                <div class="gallery-content">
+                    <div>
+                        <div class="gallery-title">Foundations of Project Management</div>
+                        <div class="gallery-subtitle">CODL, University of Moratuwa</div>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1hA5SoF4gutU9chdWRjSijKp66RXNfhEq/view?usp=drive_link" target="_blank" class="view-btn">View Certificate</a>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/cert_uom_law.jpg" alt="UoM Law" onerror="this.src='https://via.placeholder.com/300x160?text=Contract+Law'">
+                <div class="gallery-content">
+                    <div>
+                        <div class="gallery-title">Project Contract Law & Management</div>
+                        <div class="gallery-subtitle">CODL, University of Moratuwa</div>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1mENqU5ncw0rWBp-1YuRDLNjx5kCC4e17/view?usp=drive_link" target="_blank" class="view-btn">View Certificate</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="subsection-header">Engineering Software & Design</div>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="images/cert_primavera.jpg" alt="Primavera P6" onerror="this.src='https://via.placeholder.com/300x160?text=Primavera+P6'">
+                <div class="gallery-content">
+                    <div>
+                        <div class="gallery-title">Oracle Primavera P6 Professional</div>
+                        <div class="gallery-subtitle">Smart PM Training</div>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1T_Vx8AYyDAaXGP8KzstGbIPtTbWazzW3/view?usp=drive_link" target="_blank" class="view-btn">View Certificate</a>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/cert_revit.jpg" alt="Revit" onerror="this.src='https://via.placeholder.com/300x160?text=Revit'">
+                <div class="gallery-content">
+                    <div>
+                        <div class="gallery-title">Certified Professional: Revit</div>
+                        <div class="gallery-subtitle">Exam Prep - Autodesk</div>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1KbqLpcEtfE1uy1bFbA6K7d6t5AgGcnPK/view?usp=drive_link" target="_blank" class="view-btn">View Certificate</a>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/cert_civil3d.jpg" alt="Civil 3D" onerror="this.src='https://via.placeholder.com/300x160?text=Civil+3D'">
+                <div class="gallery-content">
+                    <div>
+                        <div class="gallery-title">Certified Professional: Civil 3D</div>
+                        <div class="gallery-subtitle">Exam Prep - Autodesk</div>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1RXpuIHkmx4y95GGNRv9nBl5ADgOrdpWE/view?usp=drive_link" target="_blank" class="view-btn">View Certificate</a>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/cert_matlab.jpg" alt="MATLAB" onerror="this.src='https://via.placeholder.com/300x160?text=MATLAB'">
+                <div class="gallery-content">
+                    <div>
+                        <div class="gallery-title">MATLAB Onramp</div>
+                        <div class="gallery-subtitle">MathWorks</div>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1qIUfcKQzGFEjw39okpPuDc5z19p6ETgG/view?usp=drive_link" target="_blank" class="view-btn">View Certificate</a>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/cert_bim.jpg" alt="BIM" onerror="this.src='https://via.placeholder.com/300x160?text=BIM+NTU'">
+                <div class="gallery-content">
+                    <div>
+                        <div class="gallery-title">BIM Fundamentals</div>
+                        <div class="gallery-subtitle">National Taiwan University</div>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1tNT7KLemZuGSRHmr5fr04-nRFE_3TIbJ/view?usp=drive_link" target="_blank" class="view-btn">View Certificate</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="subsection-header">Business, Analytics & IT Skills</div>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="images/cert_google_bi.jpg" alt="Google BI" onerror="this.src='https://via.placeholder.com/300x160?text=Business+Intel'">
+                <div class="gallery-content">
+                    <div>
+                        <div class="gallery-title">Foundations of Business Intelligence</div>
+                        <div class="gallery-subtitle">Authorized by Google</div>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1Uqa1aZEhqB555RejDwGV_Kwx76Dyvh4L/view?usp=drive_link" target="_blank" class="view-btn">View Certificate</a>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/cert_google_data.jpg" alt="Google Data" onerror="this.src='https://via.placeholder.com/300x160?text=Data+Models'">
+                <div class="gallery-content">
+                    <div>
+                        <div class="gallery-title">Path to Insights & Data Models</div>
+                        <div class="gallery-subtitle">Authorized by Google</div>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1ZUhwiYlhh53PTTy4WyVHyJFnrhnLeiqX/view?usp=drive_link" target="_blank" class="view-btn">View Certificate</a>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/cert_excel.jpg" alt="Excel" onerror="this.src='https://via.placeholder.com/300x160?text=Excel+Data'">
+                <div class="gallery-content">
+                    <div>
+                        <div class="gallery-title">Data Analysis using Excel</div>
+                        <div class="gallery-subtitle">Great Learning</div>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1uBXQwJP83QrUO7X7SWOkXUooSlfUp4RG/view?usp=drive_link" target="_blank" class="view-btn">View Certificate</a>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/cert_finance.jpg" alt="Financial Management" onerror="this.src='https://via.placeholder.com/300x160?text=Financial+Mgmt'">
+                <div class="gallery-content">
+                    <div>
+                        <div class="gallery-title">Financial Management</div>
+                        <div class="gallery-subtitle">Great Learning</div>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1QrknxfQydCewFwxvz_ylcvK83iA2FTDt/view?usp=drive_link" target="_blank" class="view-btn">View Certificate</a>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/cert_market_res.jpg" alt="Market Research" onerror="this.src='https://via.placeholder.com/300x160?text=Market+Research'">
+                <div class="gallery-content">
+                    <div>
+                        <div class="gallery-title">Market Research</div>
+                        <div class="gallery-subtitle">Great Learning</div>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1QTjytWXESiNhzml_R9ZHyOBCvSMmJiPM/view?usp=drive_link" target="_blank" class="view-btn">View Certificate</a>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/cert_biz_analysis.jpg" alt="Biz Analysis" onerror="this.src='https://via.placeholder.com/300x160?text=Biz+Analysis'">
+                <div class="gallery-content">
+                    <div>
+                        <div class="gallery-title">Business Analysis using Spreadsheets</div>
+                        <div class="gallery-subtitle">Coursera Project Network</div>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1GwmdY6619t4jqavd11qHCC6uc_SxdWV-/view?usp=drive_link" target="_blank" class="view-btn">View Certificate</a>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/cert_microecon.jpg" alt="Microeconomics" onerror="this.src='https://via.placeholder.com/300x160?text=Microeconomics'">
+                <div class="gallery-content">
+                    <div>
+                        <div class="gallery-title">Microeconomics: The Power of Markets</div>
+                        <div class="gallery-subtitle">University of Pennsylvania</div>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1-KXA8qT_bmFg3y4jUy9tHQI74hE6IkFk/view?usp=drive_link" target="_blank" class="view-btn">View Certificate</a>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/cert_global_trends.jpg" alt="Global Trends" onerror="this.src='https://via.placeholder.com/300x160?text=Global+Trends'">
+                <div class="gallery-content">
+                    <div>
+                        <div class="gallery-title">Global Trends for Business</div>
+                        <div class="gallery-subtitle">University of Pennsylvania</div>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1h9QWXpY8LDGjata8TLvTsP5-rcN1wGPD/view?usp=drive_link" target="_blank" class="view-btn">View Certificate</a>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/cert_digital_marketing.jpg" alt="Digital Marketing" onerror="this.src='https://via.placeholder.com/300x160?text=Digital+Marketing'">
+                <div class="gallery-content">
+                    <div>
+                        <div class="gallery-title">Digital Marketing Fundamentals</div>
+                        <div class="gallery-subtitle">Authorized by Google</div>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1BfPPrZS1ygkJjT06bnKsqTou73ZP7P94/view?usp=drive_link" target="_blank" class="view-btn">View Certificate</a>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/cert_web_design.jpg" alt="Web Design" onerror="this.src='https://via.placeholder.com/300x160?text=Web+Design'">
+                <div class="gallery-content">
+                    <div>
+                        <div class="gallery-title">Web Design for Beginners</div>
+                        <div class="gallery-subtitle">CODL, University of Moratuwa</div>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1-lM_qOMdEbSPsQS88FMYuU-SWgmQYdgP/view?usp=drive_link" target="_blank" class="view-btn">View Certificate</a>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/cert_python.jpg" alt="Python" onerror="this.src='https://via.placeholder.com/300x160?text=Python'">
+                <div class="gallery-content">
+                    <div>
+                        <div class="gallery-title">Python for Beginners</div>
+                        <div class="gallery-subtitle">CODL, University of Moratuwa</div>
+                    </div>
+                    <a href="https://drive.google.com/file/d/12ejDqSXC7q7CQgCW_EfM2bR1eGS7EKpv/view?usp=drive_link" target="_blank" class="view-btn">View Certificate</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Naveen Sampath Navarathne.</p>
+    </footer>
+
+</body>
+</html>
