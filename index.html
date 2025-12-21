@@ -13,9 +13,8 @@
         nav a { color: white; text-decoration: none; font-size: 1.1rem; margin: 0 15px; font-weight: bold; padding: 8px 15px; border-radius: 5px; transition: 0.3s; }
         nav a:hover, nav a.active { background: var(--accent); }
 
-        /* HERO HEADER (Cover Photo Configured Here) */
+        /* HERO HEADER */
         header { 
-            /* This adds a dark blue overlay on top of images/cover.jpg for readability */
             background: linear-gradient(rgba(0, 51, 102, 0.85), rgba(0, 51, 102, 0.7)), url('images/cover.jpg');
             background-size: cover;
             background-position: center;
@@ -39,9 +38,42 @@
         .about-text p { text-align: justify; margin-bottom: 20px; font-size: 1.05rem; }
         
         /* Buttons */
-        .btn-container { margin-top: 40px; text-align: center; }
-        .btn { display: inline-block; background: var(--primary); color: white; padding: 15px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; margin: 0 10px; transition: 0.3s; }
-        .btn:hover { background: var(--accent); transform: translateY(-2px); }
+        .btn-container { margin-top: 40px; text-align: center; display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; }
+        
+        .btn { 
+            display: inline-block; 
+            background: var(--primary); 
+            color: white; 
+            padding: 12px 25px; 
+            text-decoration: none; 
+            border-radius: 5px; 
+            font-weight: bold; 
+            border: 2px solid var(--primary);
+            transition: 0.3s; 
+        }
+        .btn:hover { background: var(--accent); border-color: var(--accent); transform: translateY(-2px); }
+
+        /* Secondary Button (Outline Style) */
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+        }
+        .btn-secondary:hover {
+            background-color: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+
+        /* Download Button (Green or Distinct Color) */
+        .btn-download {
+            background-color: #27ae60; /* Green color for download */
+            border-color: #27ae60;
+        }
+        .btn-download:hover {
+            background-color: #219150;
+            border-color: #219150;
+        }
 
         footer { background: #222; color: white; text-align: center; padding: 1rem; margin-top: 0; }
     </style>
@@ -89,8 +121,11 @@
             </div>
 
             <div class="btn-container">
-                <a href="experience.html" class="btn">View Work Experience & Skills &rarr;</a>
-                <a href="certificates.html" class="btn btn-secondary">View My Certificates &rarr;</a>
+                <a href="https://drive.google.com/uc?export=download&id=1uKsJTGo_5ZEpCe--8l54F__TdXcu3GUe" class="btn btn-download">Download CV &darr;</a>
+                
+                <a href="experience.html" class="btn">Work Experience &rarr;</a>
+                
+                <a href="certificates.html" class="btn btn-secondary">Certificates &rarr;</a>
             </div>
         </section>
     </div>
